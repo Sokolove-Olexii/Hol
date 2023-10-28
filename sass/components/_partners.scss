@@ -1,11 +1,20 @@
 .partners{
     padding: 63px 0 57px;
+    @media screen and (min-width:768px) {
+       padding: 66px 0 39px;
+    }
+    @media screen and (min-width:1200px) {
+        padding: 65px 0 72px;
+     }
     &__title{
         color: #333;
         text-align: center;
         font-size: 22px;
         font-weight: 700;
         margin-bottom: 20px;
+        @media screen and (min-width:768px) {
+            margin-bottom: 35px;
+        }
     }
     &__btn{
         color: #FF4E50;
@@ -25,8 +34,16 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 32px;
+    @media screen and (min-width:768px) {
+        row-gap: 53px;
+        column-gap: 23px;
+    }
+    @media screen and (min-width:1200px) {
+        gap:23px;
+     }
     &__item{
         width: 247px;
+        //CALC
     }
     &__container {
         width: 120px;
@@ -81,7 +98,7 @@
         font-size: 14px;
         font-weight: 700;
     }
-    &__description{
+    &-about{
         color: #666;
         font-family: 'Roboto', sans-serif;
         font-size: 14px;
@@ -89,3 +106,26 @@
         text-align: center;
     }
 }
+
+.button{
+    color: #FF4E50;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background-color: #FFF;
+    border-radius: 20px;
+    border: 2px solid #FF4E50;
+    margin: 0 auto;
+    width: 280px;
+    height: 40px;
+    margin-top: 29px;
+    @media screen and (min-width:768px) {
+        margin-top: 38px;
+        width: 195px;
+        height: 43px;
+    }
+}
+

@@ -6,13 +6,22 @@
     background-repeat: no-repeat;
     background-position: center;
     background-image: url("../images/smart-header.jpg");
+    @media (min-device-pixel-ratio:2), (-webkit-min-device-pixel-ratio:2), (-o-min-device-pixel-ratio:2/1), (min-resolution:192dpi), (min-resolution:2dppx){
+        background-image: url("../../images/smart@2x.jpg");
+    }
     @media screen and (min-width:768px) {
         background-image: url('../../images/tablet-header.jpg');
         padding: 202px 0 233px;
+        @media (min-device-pixel-ratio:2), (-webkit-min-device-pixel-ratio:2), (-o-min-device-pixel-ratio:2/1), (min-resolution:192dpi), (min-resolution:2dppx){
+            background-image: url("../../images/tablet@2x.jpg");
+        }
     }
     @media screen and (min-width:1200px) {
        background-image: url('../../images/desk-header.jpg');
        padding-top: 200px;
+       @media (min-device-pixel-ratio:2), (-webkit-min-device-pixel-ratio:2), (-o-min-device-pixel-ratio:2/1), (min-resolution:192dpi), (min-resolution:2dppx){
+        background-image: url("../../images/desktop@2x.jpg");
+    }
      }
     &__title{
         font-family: 'Montserrat', sans-serif;
